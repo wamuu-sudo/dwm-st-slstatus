@@ -1,39 +1,32 @@
-# Configuration de DWM Juline Edition
+## Dwm install by Juline (Arch, Endeavour, Manjaro Guide)
 
-## Téléchargement / prérequis 
+0/ Download & extract dwm-blue
 
+1/ Paste the .xinit.rc in your /home/$user (some modifications are required, like the link of your wallpaper, & the path of screenadjust & noafk)
 
-Variante bleu :
+2/ Install picom
+```pacman -S picom```
 
-```
-https://github.com/juliiine/dwm-st-slstatus/blob/main/dwm-blue.tar.gz
-```
+3/ Paste picom.conf in your /home/$user/.config
 
-L'ensemble des fichiers sont dans l'archive.
+4/ Install feh
+```pacman -S feh```
+    And modify if not already yet your feh path in the previous .xinit.rc
 
-Pré-requis :
+5/ Modify the slstatus/config.h (wifi card to change)
 
-* nerd-fonts (CaskaydiaCove)
-* picom
-* feh
-* slim (Display Manager conseillé si vous n'en avez pas déjà un).
-* base-devel (Arch) ou équivalent suivant votre distribution.
+6/ Download & install nerd-fonts on github.com/ryanoasis/nerd-fonts
+    ```sh install.sh```
 
-## Déploiement
+7/ Install dwm
+    For each folder dmenu, st, slstatus & dwm
+    ``` sudo make ```
+    ``` sudo make install ```
 
-Il faut d'abord copier le fichier `.xinitrc` contenu dans l'archive dans `~/`, ainsi que `picom.conf` dans `~/.config/`.
-Un script est peut-être nécessaire pour xrandr, qui détermine la résolution/framerate de vos écrans.
+8/ Reboot & choose Dwm on your login connection (slim is advised)
 
-Ensuite, il faut se rendre dans chacun des dossiers `dwm`, `slstatus`, `dmenu`, `st` puis effectuer les actions suivantes :
-
-* Editer si besoin le fichier config.h en fonctions de vos attentes et de votre matériel (nécessaire pour `slstatus` par exemple).
-* `sudo make`
-* `sudo make install`
-
-Si vous n'avez pas d'erreur, c'est que tout est bon.
-
-## Changer le fond d'écran
-
-```
-feh --bg-scale /home/<votreutilisateur>/image.png
-```
+# Keyboard
+Win+shift+Enter : terminal
+Win+Shift+C : ferme la fenêtre où tu as le focus
+Win+p : dmenu (pour lancer c'est progs) équivalent à Krunner
+Win+Shift+q : Arrêt forcé de dwm

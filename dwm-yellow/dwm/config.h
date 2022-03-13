@@ -10,11 +10,11 @@ static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
 static const char *fonts[]          = {"CaskaydiaCove Nerd Font:size=14:style=Regular"};
 static const char dmenufont[]       = "CaskaydiaCove Nerd Font:size=14";
-static const char col_gray1[]       = "#182d48";
-static const char col_gray2[]       = "#707eff";
-static const char col_gray3[]       = "#cddcee";
-static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#cddcee";
+static const char col_gray1[]       = "#e5b583";
+static const char col_gray2[]       = "#454a00";
+static const char col_gray3[]       = "#7e5499";
+static const char col_gray4[]       = "#7e5499";
+static const char col_cyan[]        = "#e6de00";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },

@@ -95,43 +95,19 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) 
 static const char *colorname[] = {
-	/* 8 normal colors 
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
 
-	/* 8 bright colors 
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
 
-	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour
-	"black", /* default background colour 
-};
+}; */
 
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
 
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257; */
 
 /*
@@ -144,48 +120,30 @@ static unsigned int defaultrcs = 257; */
 
 static const char *colorname[] = {
 
-  /* Pink Scheme
-  [0] = "#060307",
-  [1] = "#8a6e93",
-  [2] = "#996699",
-  [3] = "#9a6aad",
-  [4] = "#4f74f7",
-  [5] = "#a171b3",
-  [6] = "#c3a5d0",
-  [7] = "#ffffff",
-  [8]  = "#eeb9c6",
-  [9]  = "#c135a0",
-  [10] = "#f5a1b8",
-  [11] = "#c135a0",
-  [12] = "#dd95f7",
-  [13] = "#c135a0",
-  [14] = "#e8819f",
-  [15] = "#ffffff",
+ /* 8 normal colors */
+  [0] = "#665b51", /* black   */
+  [1] = "#5c5b45", /* red     */
+  [2] = "#adc400", /* green   */
+  [3] = "#b0a700", /* yellow  */
+  [4] = "#6b625b", /* blue    */
+  [5] = "#92867d", /* magenta */
+  [6] = "#beb0a4", /* cyan    */
+  [7] = "#e7e1dd", /* white   */
 
-  [256] = "#030104",
-  [257] = "#ffffff", */
+  /* 8 bright colors */
+  [8]  = "#baa2cb", /* black   */
+  [9]  = "#e5b583", /* red     */
+  [10] = "#b98e5e", /* green   */
+  [11] = "#9dbe76", /* yellow  */
+  [12] = "#81b2a6", /* blue    */
+  [13] = "#97ad81", /* magenta */
+  [14] = "#ac7acd", /* cyan    */
+  [15] = "#9cb77e", /* white   */
 
+  /* special colors */
+  [256] = "#0c0b09", /* background */
+  [257] = "#dad0c8", /* foreground */
 
-  [0] = "#030308",
-  [1] = "#69a5ac",
-  [2] = "#69a5ac",
-  [3] = "#69a5ac",
-  [4] = "#556587",
-  [5] = "#7c9ba9",
-  [6] = "#acaec8",
-  [7] = "#e1e2eb",
-
-  [8]  = "#f4e9f1",
-  [9]  = "#84b7bd",
-  [10] = "#ece5e3",
-  [11] = "#89b6bb",
-  [12] = "#f1f0f0",
-  [13] = "#6ba1a8",
-  [14] = "#69a5ac",
-  [15] = "#6fa1a7",
-
-  [256] = "#020204",
-  [257] = "#dedfe9",
 };
 /*
  * Default colors (colorname index)

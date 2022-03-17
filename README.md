@@ -1,4 +1,4 @@
-## Dwm install by Juline (Arch, Endeavour, Manjaro Guide)
+## Dwm install by <insert_username> (Arch, Endeavour, Manjaro Guide)
 
 0/ Download & extract dwm-blue
 

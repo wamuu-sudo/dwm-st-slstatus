@@ -1,0 +1,5 @@
+#!/bin/bash
+cp /usr/share/orchid/desktop/dwm/dwm-st-slstatus/.xinitrc ~
+mkdir -p ~/.config
+cp /usr/share/orchid/desktop/dwm/dwm-st-slstatus/dwm-blue/picom.conf ~/.config/
+cp /usr/share/orchid/desktop/dwm/dwm-st-slstatus/dwm-blue/noafk.sh ~

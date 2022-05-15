@@ -7,7 +7,7 @@
  */
 static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
-float alpha = 0.5;
+float alpha = 0.7;
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -165,7 +165,7 @@ static const char *colorname[] = {
   [15] = "#ffffff", /* white   */
 
   /* special colors */
-  [256] = "#1d4851", /* background */
+  [256] = "#5e5d53", /* background */
   [257] = "#ffffff", /* foreground */
 
 };

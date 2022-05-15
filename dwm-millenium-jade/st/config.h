@@ -7,7 +7,7 @@
  */
 static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
-float alpha = 0.7;
+float alpha = 0.5;
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e

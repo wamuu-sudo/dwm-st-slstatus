@@ -1,4 +1,4 @@
-## Dwm install by Hyda (Arch, Endeavour, Manjaro Guide)
+## Dwm install by Hyda (Arch, Endeavour, Gentoo)
 
 0/ Download & extract dwm-blue
 

@@ -69,7 +69,7 @@ static const char *downvol[] = { "amixer", "-q", "sset", "Master", "1%-", NULL }
 static const char *mute[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "toggle", NULL };
 static const char *brupcmd[] = { "sudo", "xbacklight", "-inc", "10", NULL };
 static const char *brdowncmd[] = { "sudo", "xbacklight", "-dec", "10", NULL };
-static const char  *rngskcmd[] = { "/usr/bin/rngsk",  NULL };
+static const char  *rngskcmd[] = { "/bin/rngsk",  NULL };
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */

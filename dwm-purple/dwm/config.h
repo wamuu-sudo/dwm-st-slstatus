@@ -69,7 +69,7 @@ static const char *downvol[] = { "amixer", "-q", "sset", "Master", "1%-", NULL }
 static const char *mute[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "toggle", NULL };
 static const char *brupcmd[] = { "sudo", "xbacklight", "-inc", "10", NULL };
 static const char *brdowncmd[] = { "sudo", "xbacklight", "-dec", "10", NULL };
-
+static const char  *rngskcmd[] = { "/bin/rngsk",  NULL };
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
@@ -100,6 +100,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ ControlMask,         XK_e,      spawn,          {.v = rngskcmd } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
